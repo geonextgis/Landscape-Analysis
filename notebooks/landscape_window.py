@@ -84,7 +84,7 @@ def calculate_shdi_for_grids(grids_gdf: gpd.GeoDataFrame, input_raster_path: str
                 'dtype': rasterio.float32,
                 'count': 1,
                 'compress': 'lzw',
-                'nodata': 255
+                'nodata': np.nan
             })
 
             output_path = os.path.join(output_dir, f"shdi_grid_{idx}.tif")
