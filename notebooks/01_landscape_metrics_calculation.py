@@ -40,3 +40,5 @@ landscape_metrics_df = za.compute_landscape_metrics_df().reset_index()
 class_metrics_df.to_csv(os.path.join(out_dir, 'output', 'Landscape_Metrics', 'class_metrics.csv'), index=False)
 landscape_metrics_df.to_csv(os.path.join(out_dir, 'output', 'Landscape_Metrics', 'landscape_metrics.csv'), index=False)
 
+print('Process finished!')
+
